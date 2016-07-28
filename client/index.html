@@ -1,7 +1,9 @@
 <!doctype html>
 <html ng-app = 'Myapp'>
 <head>
+
 	<title>StoryHub</title>
+
 	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
@@ -9,11 +11,14 @@
 	<script src="bootstrap/dist/js/bootstrap.js"></script>
     <script src="angular/angular.js"></script>
     <script src="angular-route/angular-route.js"></script>
+
     <script src="angular-cookies/angular-cookies.js"></script>
+
     <!-- App -->
     <script src = "app.js"></script>
     <!-- Controllers -->
     <script src = "/controllers/indexController.js"></script>
+
 	<script src = "/controllers/new_storyController.js"></script>
     <script src = "/controllers/dashboardController.js"></script>
     <script src = "/controllers/reglogController.js"></script>
@@ -26,5 +31,17 @@
 </head>
 <body>
 	<div ng-view></div>
+</body>
+</html>
+
+    <!-- Factories -->
+    <script src = "/factories/dummyFactory.js"></script>
+
+
+</head>
+<body>
+	<div class = 'container'>
+		<div ng-view></div>
+	</div>
 </body>
 </html>

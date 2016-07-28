@@ -12,6 +12,7 @@
 	background-size: cover;
 }
 
+
 /*-----------------------
 Style for Profile.html
 -------------------------*/
@@ -29,7 +30,7 @@ Style for Profile.html
 }
 
 .topics {
-	
+
 	margin: 10px 0px 10px 50px;
 	height: 150px;
 }
@@ -121,6 +122,15 @@ End of Style for Profile.html
 	border-radius: 0px;
 	line-height: 40px;
 }
+
+
+	font-family: monospace;
+	color:black;
+	font-size:50px;
+	text-align: center;
+	margin-top:20%;
+}
+
 
 /*DASHBOARD HTML*/
 #nav_img {

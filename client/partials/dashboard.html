@@ -1,5 +1,6 @@
 <!-- NAVBAR -->
 
+
 <nav class="navbar foncee">
 <div class="container-fluid">
   <div class="navbar-header">
@@ -51,6 +52,33 @@
       <!-- REPEAT TOP/RECENT STORIES -->
       <li ng-repeat="story in stories">
         <div class="row main">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid text-center">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img id="nav_img" alt="Brand" src="http://i.imgur.com/6PZAfHj.jpg" height="50" width="100">
+      </a>
+    </div>
+    <div class="row">
+      <h1 class="navbar-text">Story Time</h1><small>
+      <ul id="nav_list" class="list-inline navbar-text">
+        <li><a href="/dashboard"><u>Dashboard</u></a></li>
+        <li><a href="/all_stories"><u>All Stories</u></a></li>
+        <li><a href="/new_story"><u>New Story</u></a></li>
+        <li><a href="/users"><u>Users</u></a></li>
+      </ul></small>
+      <button type="button" class="btn btn-default navbar-btn" style="position:relative; float:right">Sign in</button>
+    </div>
+  </div>
+</nav>
+<div class="row">
+  <div id="left_main" class="col-md-8 borders">
+    <h1 class="text-center">Top Stories</h1>
+    <ul style="list-style-type:none" >
+      <li>
+        <div class="row borders main">
+
           <div class="col-sm-4">
             <img src="http://i.imgur.com/6PZAfHj.jpg" alt="image" height="120" width="150" style="padding-top:10px"/>
           </div>
@@ -58,6 +86,10 @@
             <a href="#/story/{{story._id}}"><h3 class="text-center">{{story.title}}</h3></a>
             <div class="col-sm-3">
               <p>{{story.genre}}</p>
+            <h3 class="text-center">Title</h3>
+            <div class="col-sm-3">
+              <p>Genre</p>
+
             </div>
             <div class="col-sm-9">
               <p>lorem asf ;oiawevo kansk aweiva;oihv aweo;oiaav aowe  awoi awoi ;oaiwfe</p>
@@ -67,16 +99,19 @@
       </li>
     </ul>
   </div>
+
   <div id="right_main" class="col-md-4 " style="overflow-y:auto;">
     <h1 class="text-center">Following</h1>
     <ul style="list-style-type:none">
       <!-- REPEAT FOLLOWING STORIES -->
       <li ng-repeat="story in stories">
         <div class="row well main">
+
           <div class="col-sm-4">
             <img src="http://i.imgur.com/6PZAfHj.jpg" alt="image" height="125" width="100" style="padding-top:20px"/>
           </div>
           <div class="col-sm-8 text-center">
+
             <h3>{{story.title}}</h3>
             <p>{story.genre}</p>
           </div>
@@ -84,5 +119,4 @@
       </li>
     </ul>
   </div>
-</div>
 </div>
