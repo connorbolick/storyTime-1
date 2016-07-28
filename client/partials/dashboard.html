@@ -1,0 +1,88 @@
+<!-- NAVBAR -->
+
+<nav class="navbar foncee">
+<div class="container-fluid">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#/">StoryHub</a>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">Link</a></li>
+      <li class="dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#/new_story">Stories</a>
+      </li>
+  </ul>
+  </div>
+  <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+      <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nazim <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Profile</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </li>
+  </ul>
+</div><!--/.container-fluid -->
+</nav>
+<!-- END NAV -->
+
+<div class="container">
+<div class="row">
+  <div id="left_main" class="col-md-8 well">
+    <h1 class="text-center">Top Stories</h1>
+    <ul style="list-style-type:none">
+      <!-- REPEAT TOP/RECENT STORIES -->
+      <li ng-repeat="story in stories">
+        <div class="row main">
+          <div class="col-sm-4">
+            <img src="http://i.imgur.com/6PZAfHj.jpg" alt="image" height="120" width="150" style="padding-top:10px"/>
+          </div>
+          <div class="col-sm-8 row">
+            <a href="#/story/{{story._id}}"><h3 class="text-center">{{story.title}}</h3></a>
+            <div class="col-sm-3">
+              <p>{{story.genre}}</p>
+            </div>
+            <div class="col-sm-9">
+              <p>lorem asf ;oiawevo kansk aweiva;oihv aweo;oiaav aowe  awoi awoi ;oaiwfe</p>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="right_main" class="col-md-4 " style="overflow-y:auto;">
+    <h1 class="text-center">Following</h1>
+    <ul style="list-style-type:none">
+      <!-- REPEAT FOLLOWING STORIES -->
+      <li ng-repeat="story in stories">
+        <div class="row well main">
+          <div class="col-sm-4">
+            <img src="http://i.imgur.com/6PZAfHj.jpg" alt="image" height="125" width="100" style="padding-top:20px"/>
+          </div>
+          <div class="col-sm-8 text-center">
+            <h3>{{story.title}}</h3>
+            <p>{story.genre}</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
